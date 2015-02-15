@@ -20,5 +20,5 @@ bin/pybot: bin/buildout buildout.cfg
 	touch $@
 
 test: bin/pybot
-	bin/pybot -d $(ROBOT_OUTPUT) -x $(ROBOT_OUTPUT)/junit.xml tests
+	bin/pybot -d output -x $(ROBOT_OUTPUT)/junit.xml tests
 

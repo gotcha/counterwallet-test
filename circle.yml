@@ -7,5 +7,5 @@ test:
     override:
         - make test ROBOT_OUTPUT=$CIRCLE_TEST_REPORTS
     post:
-        - cp $CIRCLE_TEST_REPORTS/* $CIRCLE_ARTIFACTS
+        - cp output/* $CIRCLE_ARTIFACTS
 
