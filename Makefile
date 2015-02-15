@@ -1,5 +1,7 @@
 VIRTUALENV=virtualenv-2.7
 
+all: test
+
 install: bin/pybot
 
 bin/python:
@@ -13,3 +15,7 @@ bin/buildout: bin/python bootstrap.py
 
 bin/pybot: bin/buildout buildout.cfg
 	bin/buildout -Nvt 5
+
+test: bin/pybot
+	bin/pybot tests
+
