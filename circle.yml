@@ -1,6 +1,8 @@
 dependencies:
     override:
         - make install VIRTUALENV=virtualenv
+    cache_directories:
+        - eggs
 test:
     override:
         - make test
