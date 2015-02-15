@@ -1,4 +1,5 @@
 VIRTUALENV=virtualenv-2.7
+ROBOT_OUTPUT=output
 
 all: test
 
@@ -19,5 +20,5 @@ bin/pybot: bin/buildout buildout.cfg
 	touch $@
 
 test: bin/pybot
-	bin/pybot -d output tests
+	bin/pybot -d $(ROBOT_OUTPUT) -x $(ROBOT_OUTPUT)/junit.xml tests
 

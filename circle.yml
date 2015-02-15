@@ -1,11 +1,11 @@
 dependencies:
     override:
-        - make install VIRTUALENV=virtualenv
+        - make install VIRTUALENV=virtualenv ROBOT_OUTPUT=$CIRCLE_TEST_REPORTS
     cache_directories:
         - eggs
 test:
     override:
         - make test
     post:
-        - cp output/* $CIRCLE_ARTIFACTS
+        - cp $CIRCLE_TEST_REPORTS/* $CIRCLE_ARTIFACTS
 
