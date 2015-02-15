@@ -3,6 +3,8 @@ Counterwallet tests
 
 This a functional test suite of Counterparty wallet (counterwallet)
 
+[![Circle CI](https://circleci.com/gh/gotcha/counterwallet-test.svg?style=svg)](https://circleci.com/gh/gotcha/counterwallet-test)
+
 Install
 -------
 
