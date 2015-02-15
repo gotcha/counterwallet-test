@@ -1,0 +1,5 @@
+bin/
+lib/
+include/
+.installed.cfg
+bootstrap.py
