@@ -1,6 +1,6 @@
 VIRTUALENV=virtualenv-2.7
 
-all: bin/pybot
+install: bin/pybot
 
 bin/python:
 	$(VIRTUALENV) .
