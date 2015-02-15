@@ -17,5 +17,5 @@ bin/pybot: bin/buildout buildout.cfg
 	bin/buildout -Nvt 5
 
 test: bin/pybot
-	bin/pybot tests
+	bin/pybot -d output tests
 
